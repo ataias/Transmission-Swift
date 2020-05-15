@@ -1,5 +1,7 @@
 #if os(Linux)
 import OpenCombine
+import OpenCombineDispatch
+import OpenCombineFoundation
 import FoundationNetworking
 #else
 import Combine
