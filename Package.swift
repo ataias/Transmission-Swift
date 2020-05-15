@@ -12,8 +12,11 @@ let package = Package(
     products: [
         .library(name: "Transmission", targets: ["Transmission"]),
     ],
+    dependencies: [
+    	.package(url: "https://github.com/broadwaylamb/OpenCombine.git", from: "0.8.0"),
+    ],
     targets: [
-        .target(name: "Transmission"),
+        .target(name: "Transmission", dependencies: ["OpenCombine"]),
         .testTarget(name: "TransmissionIntegrationTests", dependencies: [.target(name: "Transmission")]),
     ]
 )

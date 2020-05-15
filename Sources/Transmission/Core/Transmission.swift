@@ -1,4 +1,9 @@
+#if os(Linux)
+import OpenCombine
+import FoundationNetworking
+#else
 import Combine
+#endif
 import Foundation
 
 /// A Transmission RPC API client.

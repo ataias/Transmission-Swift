@@ -1,4 +1,8 @@
+#if os(Linux)
+import OpenCombine
+#else
 import Combine
+#endif
 
 /// A definition for a Transmission RPC request.
 public struct Request<Value> {
